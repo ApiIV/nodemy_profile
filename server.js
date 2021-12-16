@@ -14,6 +14,10 @@ app.get('/', (req, res) => {
   res.sendFile(file_locationnn)
 })
 
+app.get('/Home', (req,res) =>{
+  res.json("Home")
+})
+
 app.listen(process.env.PORT, () => {
-  console.log(`Example app listening at http://localhost:${port}`)
+  console.log(`Example app listening at http://localhost:`)
 })
